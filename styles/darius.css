@@ -1,0 +1,213 @@
+
+.form1 {
+    border: 3px solid #f1f1f1;
+  }
+  .hey {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+ .hey:hover{
+    opacity:0.8;
+ }
+ .cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+  }
+  .imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+  }
+
+img.avatar {
+  width: 20%;
+}
+.container {
+  padding: 16px;
+}
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  h2,h3,h4,h5{
+    font-size:x-large
+  }
+
+  section {
+    background-color: white;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+.doctor-list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.doctor-list li {
+    text-align: center;
+    width: 45%; 
+    margin: 10px;
+}
+
+.doctor-list img {
+    max-width: 100%;
+    border-radius: 50%; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    transition: transform 0.5s ease-in-out;
+}
+
+.doctor-list img:hover {
+  transform: scale(1.1);
+}
+
+.doctor-list p {
+    margin-top: 10px;
+    font-size: x-large;
+}
+.error-message{
+    color:#f44336;
+}
+#about p,#services ul{
+font-size: larger;
+}
+
+#registration-form {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+fieldset {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+legend {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.label-group {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.input-group {
+  width: calc(100% - 22px);
+  padding: 10px;
+  margin-bottom: 15px;
+  box-sizing: border-box;
+}
+
+.radio-group {
+  margin-right: 5px;
+}
+
+.checkbox-group {
+  margin-right: 5px;
+}
+
+.error-message {
+  color: red;
+}
+
+#otherGenderSpecify {
+  display: block;
+  margin-top: 10px;
+}
+
+.info-text {
+  font-style: italic;
+  color: #666;
+}
+
+.button-primary {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  background-color: #45a049;
+}
+
+#reset_form {
+  background-color: #f44336;
+}
+
+#reset_form:hover {
+  background-color: #d32f2f;
+}
+/* Chat Button Styles */
+.chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #063970;
+  color: #fff;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Pop-up Chat Styles */
+.chat-popup {
+  display: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  width: 300px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.chat-header {
+  background-color: #063970;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+.chat-close {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.chat-content {
+  padding: 20px;
+  max-height: 200px; /* Limit the height for better user experience */
+  overflow-y: auto; /* Add scroll for overflow */
+}
+
+
+@media screen and (max-width: 300px) {
+    span.psw {
+      display: block;
+      float: none;
+    }
+    .cancelbtn {
+      width: 100%;
+    }
+  }
+  .label-group {
+    width: 100%;
+}

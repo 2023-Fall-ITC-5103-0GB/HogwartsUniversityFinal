@@ -1,0 +1,338 @@
+
+
+.container {
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding-right: 0px;
+    height: 80vh;
+    max-width: 1200px;
+    overflow:auto;
+}
+
+.top-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 55px;
+    padding-right: 100px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+h1 {
+    color: #052c3f;
+    font-size: 24px;
+    margin-bottom: 0%;
+}
+
+h2 {
+    font-size: 72px;
+    margin-bottom: 20px;
+    color: #0088cc;
+    margin-top: 10px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.pointer {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #0088cc;
+    margin-top: 0%;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.nav1 {
+    display: flex;
+    gap: 20px;
+}
+
+.nav1 a{
+    text-decoration: none;
+    color: #003482;
+    transition: 0.3s;
+    font-size: 1.2em;
+    gap: 10px;
+    margin-right: 18px;
+    margin-left: 40px;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+.nav1 a:hover {
+    color: #89d191;
+}
+.navbar{
+    background-color: #06619a;
+    padding-right: 100px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 100px;
+}
+
+select {
+    padding: 10px;
+    margin-left: 30px;
+    margin-right: 10px;
+    background-color: #06619a;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1.0em;
+}
+a:hover{
+    color: #7baae8;
+}
+
+
+.white-text {
+    color: white;
+    font-weight: bold;
+}
+
+#image-section {
+    width: 100%;
+    height: 400px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 2px 0 30px 0;
+}
+
+#description-container {
+    display: flex;
+    justify-content: center;
+  }
+
+.pointer {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:fantasy;
+}
+
+h4 {
+    font-size: 30px;
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.prop{
+    display: flex;
+    justify-content: center;
+    color: #666;
+
+}
+
+.pmain {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    font-weight: bold;
+}
+p a {
+    color: #155c7f;; 
+    transition: 0.3s ; 
+}
+
+p a:hover {
+    color: #08682e;
+    transition: 0.3s;
+}
+
+p a:visited {
+    color: #5d0036;
+}
+
+.search-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+    background-color: #083551;
+    height: 10vh;
+}
+
+.search-section2 {
+    display: flex;
+    flex-direction: row;
+    background-color: #083551;
+    gap: 50px;
+}
+
+
+#p-white{
+    color:white;
+    font-weight: bolder;
+    margin: 40px 10px 0px 100px;
+}
+
+#input1[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 480px;
+    border-radius: 9px;
+    margin: 0 10px 20px 85px;
+
+}
+
+#button1 {
+    padding: 10px 20px;
+    width: 150px;
+    background-color: #156f9c;
+    color: #fff;
+    border:none;
+    cursor: pointer;
+    transition: #156f9c 0.3s;
+    border-radius: 5px;
+    margin: 0 10px 20px -50px;
+    font-weight: bolder;
+    font-size: 1.0em;
+}
+
+#button1:hover {
+    background-color: #2db1e5;
+}
+
+.main-2 img {
+    width: auto;  
+    height: 200px;   
+    object-fit: cover;
+    box-shadow: 5px 5px 10px rgb(13, 13, 13);
+    margin-bottom: 10px;
+}
+
+.bg-red{
+    background-color: rgb(91, 23, 23)
+}
+
+.bg-green{
+    background-color: #21051e
+}
+
+.bg-yellow{
+    background-color: rgb(70, 69, 7)
+}
+
+.bg-blue{
+    background-color: #0c195b
+}
+.main-2{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+    text-align: left;
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 200px;
+    color:white;
+    padding: 10px;
+    box-shadow: 1px 1px 3px rgb(236, 231, 231);
+    height: 95%;
+    margin:0px;
+}
+.size-2{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 50vh;
+    margin: 0px 2px 0 2px;
+    justify-content: space-between;
+    padding: 30px;
+    box-shadow: 3px -3px 10px rgb(81, 137, 25);
+    background-color: #04024f;
+    background-image: url('../images/Ministry.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+p{
+    font-size: 1.4em;
+    color: rgb(255, 251, 251);
+}
+@media (max-width: 1000px) {
+    
+    .top-section {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 55px;
+        padding-right: 100px;
+    }
+
+    .nav1 {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .search-section2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        gap: 15px; 
+        margin-top: 0;
+        background-color: #083551;
+        height: auto; 
+    }
+
+    #button1 {
+        padding: 10px 20px;
+        width: 200px;
+        background-color: #156f9c;
+        color: #fff;
+        border:none;
+        cursor: pointer;
+        transition: #156f9c 0.3s;
+        border-radius: 5px;
+        font-weight: bolder;
+        font-size: 1.0em;
+        margin: -5px 0px 0px -100px;
+    }
+
+    #input1[type="text"] {
+        padding: 10px;
+        font-size: 16px;
+        width: 300px;
+        border-radius: 9px;
+        margin: 0px 0px 0px 20px;
+    }
+    #p-white{
+        color:white;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main-2 img{
+        width: 95%;
+        height: 100%;
+        object-fit: contain;
+        overflow-y: auto;
+    }
+    .main-2{
+        width:100%;
+        height: 600px;
+        overflow-y: auto;
+        margin: 0;
+    }
+    .size-2{
+        display:flex;
+        flex-direction: column;
+        overflow-y: auto;
+        align-items: center;
+        height: 1400px;
+        padding: 0;
+        margin: 0;
+    }
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find out who to contact</title>
+    <link rel="stylesheet" href="./styles/vyly.css"/>
+    <link rel="stylesheet" href="./styles/main.css"/>
+  </head>
+
+  <body class="body-confirm">
+    <main class="main-confirm">
+      <h1 class="h1-confirm">HOGWARTS UNIVERSITY !</h1>
+      <h3>Professor: <span class="span-confirm">Vy Ngoc Phuong Ly</span></h3>
+      <h3>Department: <span class="span-confirm" id="departmentValue"></span><br /></h3>
+      <h3>Phone number: <span class="span-confirm">999-999-9999</span></h3>
+      <h3>Email: <span class="span-confirm">vyngocphuongvy@humber.ca</span></h3>
+      <h3>Campus: <span class="span-confirm" id="campusValue"></span></h3>
+      <p><a href="./contact.html">Go back</a></p>
+    </main>
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const urlParams = new URLSearchParams(window.location.search);
+        const department = urlParams.get('department');
+        const campus = urlParams.get('campus');
+
+        // Update the content of the element with the decoded department value
+        document.getElementById('departmentValue').innerText = department;
+        document.getElementById('campusValue').innerText = campus;
+
+        console.log('department',department);
+      });
+    </script>
+  </body>
+</html>

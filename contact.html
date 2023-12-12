@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Common Header, Footer, Nav-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/vyly.css">
+    <script src="./javascripts/main.js"></script>
+    <script src="./javascripts/contact.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-top">
+            <div id="div-logo"><!--Logo on the left of the screen-->
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-logo">
+                    <h3>HOGWARTS UNIVERSITY</h3>
+            </div>
+            <div id="div-form"> <!--Search form on the right of the screen-->
+                <div id="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search" id="searchHome">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header-contact">
+                    <div class="div-email">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                                <span class="text_1">EMAIL</span></i></a>
+                    </div>
+                    <div class="div-signin">
+                        <a href="./sign_in.html" target="_blank">
+                            <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                                <span class="text_2">SIGN IN</span></i></a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Main menu-->
+<nav class="topnav" id="myTopnav"> 
+    <ul>
+        <li><a href="./home.html" class="text_menu">HOME</a></li>
+        <li>
+            <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+            <ul class="submenu">
+                <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+                <li><a href="./admission.html" class="text_menu">ADMISSIONS</a></li>
+            </ul>
+        </li>
+        <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+        <li><a href="./library_and_resources.html" class="text_menu">LIBRARY</a></li>
+        <li>
+            <a href="#" class="text_menu">RESOURCES</a>
+            <ul class="submenu">
+                <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+                <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+            </ul>
+        </li>
+        <li><a href="./webpage.html" class="text_menu">FACULTY</a></li>
+        <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+        <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+            <i class="fa fa-bars"></i>
+        </a></li>
+    </ul>
+  </nav>
+
+    <main id="faqs"> <!--You can start coding your webpages right here-->
+        <div class="mainform-top">
+            <div class="mainform-top-header">
+                <h2 class="text_3">We are here to help.</h2>
+                <p class="text_4">You can contact us during business hours 10:00 a.m. to 4:00 p.m. (MT). It is currently 9:37 p.m. (MT).</p>
+            </div>
+        </div>
+
+        <div class="mainform-center">
+            <div class="mainform-content">
+                <div class="mainform-content-left">
+                    <h2 class="text_7">Call us</h2>
+                    <img 
+                    src="./images/icon-contact.jpg" 
+                    alt="Icon Contact"
+                    class="img-icon">
+                    <h3 class="text_5">1-555-555-555 
+                        <span class="text_7">(toll-free in Canada/US)</span>
+                    </h3>
+                    <h2 class="text_6">Monday to Friday</h2>
+                    <h2 class="text_7">10:00 a.m. to 4:00 p.m.</h2>
+                </div>
+
+                <div class="mainform-content-right">
+                    <h2 class="text_7">Help and support</h2>
+                    <img 
+                    src="./images/icon-support.jpeg" 
+                    alt="Icon Support"
+                    class="img-icon-support">
+                    <h2 class="text_7">Looking for specific information? AU offers a variety of online student support services to assist you.</h2>
+                    <h4><a href="#">Find out who to contact</a></h4>
+                    <div id="js-findcontact">
+                        <form action="./confirm.html" method="get">
+                            <div class="form-common">
+                            <div class="form-contact">
+                              <label for="department">Department:</label>
+                              <input type="text" name="department" id="department" />
+                              <span>*</span>
+                            </div>
+                            <div class="form-contact">
+                              <label for="campus">Campus:</label>
+                              <select name="campus" id="campus">
+                                <option value="">Select a campus</option>
+                                <option>North Campus</option>
+                                <option>Lakeshore Campus</option>
+                                <option>IGS Campus</option>
+                              </select>
+                              <span>*</span>
+                            </div>
+                        </div>
+                            <div class="form-contact">
+                              <input type="submit" id="search" value="Search" />
+                            </div>
+                          </form>
+                      </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="mainform-footer">
+                <table class="table-contact">
+                        <thead class="thead-contact"><!--Title of table-->
+                            <tr class="tr-contact">
+                                <th id="til_business">Faculty of Business Student Support Centre</th>
+                                <th id="til_science">Faculty of Science and Technology Student Success Centre</th>
+                                <th id="til_technical">Technical Services Call Centre</th>
+                            </tr>
+                        </thead>
+                        <tbody class="tbody-contact"><!--Content of table-->
+                            <tr class="tr-contact">
+                                <td headers="til_business" class="td-contact"> <!--Row 1-->
+                                    <strong>Monday to Friday</strong>
+                                    <br>9:00 a.m. to 8:30 p.m.<br><br>
+                                    <strong>Saturday</strong>
+                                    <br>9:00 a.m. to 4:30 p.m.<br><br>
+                                    <strong>Sunday</strong>
+                                    <br>10:00 a.m. to 4:00 p.m.<br><br>
+                                </td> 
+                                <td headers="til_science" class="td-contact">
+                                    <strong>Monday to Friday</strong>
+                                    <br>9:00 a.m. to 4:00 p.m.
+                                </td>
+                                <td headers="til_technical" class="td-contact">
+                                    <strong>Monday to Friday</strong>
+                                    <br>10:00 a.m. to 4:30 p.m.
+                                </td>
+                            </tr>
+                            <tr class="tr-contact"> <!--Row 2-->
+                                <td headers="til_business" class="td-contact">
+                                    <p class="text_5">1-555-555-555 
+                                        <span class="text_7">(international) or</span>
+                                        <p class="text_5">1-800-444-4444</p>                             
+                                </td> 
+                                <td headers="til_science" class="td-contact">
+                                    <p class="text_5">1-666-666-666 
+                                        <span class="text_7">(international) or</span>
+                                        <p class="text_5">1-800-777-7777</p>
+                                </td>
+                                <td headers="til_technical" class="td-contact">
+                                    <p class="text_5">1-777-777-777 
+                                        <span class="text_7">(international) or</span>
+                                        <p class="text_5">1-800-222-2222</p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="mainform-footer-details">
+                        <h2 class="text_8">Hogwarts University</h2>
+                        <address>12312 Main Street<br>Mountain Home,<br>CA 93923</address>
+                        <p class="text_2">Email: hogwarts@university.com</p>
+                    </div>
+            </div> 
+    </main>
+
+    <footer class="footer"> 
+        <div class="footer-social"> <!--Social Icon in the left sadie of the screen-->
+            <div class="social-links">
+                <a href="https://www.facebook.com/" 
+                    title="Facebook of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.instagram.com/" 
+                    title="Instagram of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.youtube.com/" 
+                    title="Youtube of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://twitter.com/" 
+                    title="Twitter of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-footer">
+                    <p>HOGWARTS UNIVERSITY</p>
+            </div>
+        
+            Copyright &copy; 2023 Hogwarts University
+    </footer>
+</body>
+
+</html>

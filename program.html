@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- Common Header, Footer, Nav-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/vyly.css">
+    <script src="./javascripts/program.js"></script>
+    <script src="./javascripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title> 
+</head>
+
+<body>
+    <header>
+        <nav class="nav-top">
+            <div id="div-logo"><!--Logo on the left of the screen-->
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-logo">
+                    <h3>HOGWARTS UNIVERSITY</h3>
+            </div>
+            <div id="div-form"> <!--Search form on the right of the screen-->
+                <div id="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search" id="searchHome">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header-contact">
+                    <div class="div-email">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                                <span class="text_1">EMAIL</span></i></a>
+                    </div>
+                    <div class="div-signin">
+                        <a href="./sign_in.html" target="_blank">
+                            <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                                <span class="text_2">SIGN IN</span></i></a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Main menu-->
+<nav class="topnav" id="myTopnav"> 
+    <ul>
+        <li><a href="./home.html" class="text_menu">HOME</a></li>
+        <li>
+            <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+            <ul class="submenu">
+                <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+                <li><a href="./admission.html" class="text_menu">ADMISSIONS</a></li>
+            </ul>
+        </li>
+        <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+        <li><a href="./library_and_resources.html" class="text_menu">LIBRARY</a></li>
+        <li>
+            <a href="#" class="text_menu">RESOURCES</a>
+            <ul class="submenu">
+                <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+                <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+            </ul>
+        </li>
+        <li><a href="./webpage.html" class="text_menu">FACULTY</a></li>
+        <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+        <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+            <i class="fa fa-bars"></i>
+        </a></li>
+    </ul>
+  </nav>
+
+    <main class="main-program"> <!--You can start coding your webpages right here-->
+        <div class="div-program-img">
+            <img
+                src="images/academic-vy-8.jpg"
+                alt="Programs of Hogwarts University"
+                name="slideshow"
+                id="slideshow"
+                class="img-program-bg"/>
+            </a>
+        </div>
+      
+        <div class="div-program-header"><h1>Full-Time Programs</h1></div>
+        <div class="div-program-table-form">
+            <div class="div-program-table">
+                <table id="table-program">
+                  <thead id="thead-program">
+                    <tr class="tr-program">
+                      <th id="til_code">Code</th>
+                      <th id="til_program">Program Name</th>
+                      <th id="til_description">Description</th>
+                      <th id="til_cre">Credential
+                        <i class="fa fa-info-circle" style="font-size:16px;color: #001e42;"></i>
+                      </th>
+                      <th id="til_length">Length</th>
+                      <th id="til_location">Location
+                        <i class="fa fa-info-circle" style="font-size:16px;color: #001e42;"></i>
+                      </th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody-program"></tbody>
+                </table>
+              </div>
+        </div>
+       
+        <div>
+            <div class="div-program-header"><h1>Continuous Professional Learning Programs(CPL)</h1></div>
+            <div class="div-program-container">
+                <div class="item1 item"><!--Item 1-->
+                    <img 
+                        src="./images/actronomy.jpeg" 
+                        alt="Astronomy" 
+                        class="img-subject">
+                        <div class="item-text">
+                            <h3>Astronomy</h3>
+                            <h5 class="text-item-mini">Major</h5>
+                            <h4>Bachelor of Hogwarts</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #d4af0a;"> North Campus</i>
+                        </div>
+                </div>
+                <div class="item2 item"><!--Item 2-->
+                    <img 
+                        src="./images/chams.jpeg" 
+                        alt="Charms" 
+                        class="img-subject">
+                        <div class="item-text">
+                            <h3>Charms</h3>
+                            <h5 class="text-item-mini">Minor</h5>
+                            <h4>Bachelor of Hogwarts</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #d4af0a;"> North Campus</i>
+                        </div>
+                </div>
+                <div class="item3 item"><!--Item 3-->
+                    <img 
+                        src="./images/fying.jpg" 
+                        alt="Fying" 
+                        class="img-subject">
+                        <div class="item-text">
+                            <h3>Fying</h3>
+                            <h5 class="text-item-mini">Specialist</h5>
+                            <h4>Bachelor of Hogwarts</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #d4af0a;"> North Campus</i>
+                        </div>
+                </div>
+                <div class="item4 item"><!--Item 4-->
+                    <img 
+                        src="./images/herbology.jpg" 
+                        alt="Herbology" 
+                        class="img-subject">
+                        <div class="item-text">
+                            <h3>Herbology</h3>
+                            <h5 class="text-item-mini">Minor</h5>
+                            <h4>Bachelor of Hogwarts</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #d4af0a;"> North Campus</i>
+                        </div>
+                </div>
+                <div class="item5 item"><!--Item 5-->
+                    <img 
+                        src="./images/ghoul.jpg" 
+                        alt="Ghoul Studies" 
+                        class="img-subject">
+                        <div class="item-text">
+                            <h3>Ghoul Studies</h3>
+                            <h5 class="text-item-mini">Specialist, Major</h5>
+                            <h4>Bachelor of Hogwarts</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #d4af0a;"> North Campus</i>
+                        </div>
+                </div>
+                <div class="item6 item"><!--Item 6-->
+                    <img 
+                        src="./images/xylomancy.jpg" 
+                        alt="Xylomancy" 
+                        class="img-subject">
+                        <div class="item-text">
+                            <h3>Xylomancy</h3>
+                            <h5 class="text-item-mini">Specialist</h5>
+                            <h4>Bachelor of Hogwarts</h4>
+                            <i class="fa fa-map-marker" aria-hidden="true" style="color: #d4af0a;"> North Campus</i>
+                        </div>
+                </div>
+            </div>
+        </div>
+       
+        <div class="div-program-bottom">
+            <div class="div-program-header"><h1>Meet our programs</h1></div><!--Video-->
+            <div class="div-program-video">
+                <section id="s1">
+                    <h5 class="text_2">Professor Pomona Sprout teaches her second-year Herbology students how to pot young Mandrakes. </h5>
+                    <iframe style="width: 100%; height: 345px;" 
+                            src="https://www.youtube.com/embed/G17jQg_pUJg"></iframe>
+                </section>
+                <section id="s2">
+                    <h5 class="text_2">Alastor 'Mad-Eye' Moody tells the students of the three unforgivable curses.</h5>
+                    <iframe style="width: 100%; height: 345px;" 
+                            src="https://www.youtube.com/embed/dbV3qODiBGc"></iframe>
+                </section>
+                <section id="s3">
+                    <h5 class="text_2">At the encouragement of Professor Snape and Professor Gilderoy Lockhart.</h5>
+                    <iframe style="width: 100%; height: 345px;" 
+                            src="https://www.youtube.com/embed/0Dj2kq5Neus"></iframe>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer"> 
+        <div class="footer-social"> <!--Social Icon in the left sadie of the screen-->
+            <div class="social-links">
+                <a href="https://www.facebook.com/" 
+                    title="Facebook of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.instagram.com/" 
+                    title="Instagram of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.youtube.com/" 
+                    title="Youtube of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://twitter.com/" 
+                    title="Twitter of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-footer">
+                    <p>HOGWARTS UNIVERSITY</p>
+            </div>
+        
+            Copyright &copy; 2023 Hogwarts University
+    </footer>
+</body>
+
+</html>

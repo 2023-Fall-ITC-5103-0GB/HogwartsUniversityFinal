@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/kavya.css">
+    <script src="./javascripts/page.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title>
+ 
+</head>
+
+<body>
+    <header>
+        <nav class="nav-top">
+            <div id="div-logo"><!--Logo on the left of the screen-->
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-logo">
+                    <h3>HOGWARTS UNIVERSITY</h3>
+            </div>
+            <div id="div-form"> <!--Search form on the right of the screen-->
+                <div id="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search" id="searchHome">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header-contact">
+                    <div class="div-email">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                                <span class="text_1">EMAIL</span></i></a>
+                    </div>
+                    <div class="div-signin">
+                        <a href="./sign_in.html" target="_blank">
+                            <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                                <span class="text_2">SIGN IN</span></i></a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Main menu-->
+<nav class="topnav" id="myTopnav"> 
+  <ul>
+      <li><a href="./home.html" class="text_menu">HOME</a></li>
+      <li>
+          <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+          <ul class="submenu">
+              <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+              <li><a href="./admission.html" class="text_menu">ADMISSIONS</a></li>
+          </ul>
+      </li>
+      <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+      <li><a href="./library_and_resources.html" class="text_menu">LIBRARY</a></li>
+      <li>
+          <a href="#" class="text_menu">RESOURCES</a>
+          <ul class="submenu">
+              <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+              <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+          </ul>
+      </li>
+      <li><a href="./webpage.html" class="text_menu">FACULTY</a></li>
+      <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+      <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+          <i class="fa fa-bars"></i>
+      </a></li>
+  </ul>
+</nav>
+
+    <main>
+      <div class="cta-section">
+        <h3>Explore Our Programs</h3>
+        <p>Discover a world of knowledge with our distinguished faculty. </p>
+        <button onclick="searchProgram()">Search Programs</button>
+        <button onclick="beginProgram()">Begin Program</button>
+    </div>
+      <h1 style="text-align:center">FACULTY & STAFF</h1>
+      <div class="main"> 
+      <div class="column">
+        <div class="card1">
+          <div class="envelope" onclick="toggleDetails('vy-details')">
+            <img src="images/V.jpg" alt="V">
+            <div class="container">
+              <h2>Professor VyLy</h2>
+              <p class="title">Head of the Transfiguration Department</p>
+            </div>
+          </div>
+          <div id="vy-details" class="details-container" style="display: none;">
+            <p>She is the Head of the Transfiguration Department.</p>
+            <p>She is working with us for the past 15 years.</p>
+            <p>She finished her studies at Oxford University.</p>
+            <div class="contact-method">
+              <label for="vy-contact">Contact Method:</label>
+              <select id="vy-contact" onchange="toggleContactMethod('vy-details')">
+                
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="post">Post</option>
+              </select>
+            </div>
+            <div class="email-details" style="display: none;">
+              <p>Email: vyly@Hagwards.com</p>
+              <p><button class="button">Contact by Email</button></p>
+            </div>
+            <div class="phone-details" style="display: none;">
+              <p>Phone: +123 456 789</p>
+              <p><button class="button">Contact by Phone</button></p>
+            </div>
+            <div class="post-details" style="display: none;">
+              <p>Send mail to:</p>
+              <address>
+                Professor VyLy<br>
+                Transfiguration Department<br>
+                Hagwards School of Witchcraft and Wizardry<br>
+              </address>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="column">
+        <div class="card1">
+          <div class="envelope" onclick="toggleDetails('darius-details')">
+            <img src="images/Darius.jpg" alt="Darius">
+            <div class="container">
+              <h2>Proffessor Eagle Darius</h2>
+              <p class="title">CEO & Founder</p>
+            </div>
+          </div>
+          <div id="darius-details" class="details-container" style="display: none;">
+            <p>He is the CEO of the University for the past 23 years.</p>
+            <p>He graduated from Hagwards University in 1993.</p>
+      
+            <!-- Contact Method Dropdown -->
+            <label for="darius-contact">Contact Method:</label>
+            <select id="darius-contact" onchange="toggleContactMethod('darius-details')">
+              <option value="email">Email</option>
+              <option value="phone">Phone</option>
+              <option value="post">Post</option>
+            </select>
+      
+            <!-- Email details -->
+            <div class="email-details" style="display: none;">
+              <p>Darius@Hagwards.com</p>
+              <p><button class="button">Contact by Email</button></p>
+            </div>
+      
+            <!-- Phone details -->
+            <div class="phone-details" style="display: none;">
+              <p>Phone: +123 456 789</p>
+              <p><button class="button">Contact by Phone</button></p>
+            </div>
+      
+            <!-- Post details -->
+            <div class="post-details" style="display: none;">
+              <p>Send mail to:</p>
+              <address>
+                Professor Eagle Darius<br>
+                Hagwards University<br>
+                Campus Address<br>
+              </address>
+           
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card1">
+          <div class="envelope" onclick="toggleDetails('kavya-details')">
+            <img src="images/Kavya.jpg"  alt="Kavya">
+            <div class="container">
+              <h2>Proffessor Kavya</h2>
+              <p class="title">Art Department</p>
+            </div>
+          </div>
+          <div id="kavya-details" class="details-container" style="display: none;">
+            <p>She is the head of Art Department for the past 13 years.</p>
+            <p>She graduated from Hagwards University of Arts in 1995.</p>
+            <p>Worked as Art Professor in Hagwards University.</p>
+            <div class="contact-method">
+              <label for="kavya-contact">Contact Method:</label>
+              <select id="kavya-contact" onchange="toggleContactMethod('kavya-details')">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="post">Post</option>
+              </select>
+            </div>
+            <div class="email-details" style="display: none;">
+              <p>Email: kavya@Hagwards.com</p>
+            </div>
+            <div class="phone-details" style="display: none;">
+              <p>Phone: [Add phone details here]</p>
+            </div>
+            <div class="post-details" style="display: none;">
+              <p>Post: [Add post details here]</p>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+     
+      <div class="column">
+        <div class="card1">
+          <div class="envelope" onclick="toggleDetails('scott-details')">
+            <img src="images/Scott.jpg" alt="Scott">
+            <div class="container">
+              <h2>Proffessor Wei</h2>
+              <p class="title">Potions Proffessor</p>
+            </div>
+          </div>
+          <div id="scott-details" class="details-container" style="display: none;">
+            <p>He is the head of Potions Department for the past 10 years.</p>
+            <p>He graduated from Hagwards University of Arts in 1999.</p>
+            <p>More than 10 years experience in potions.</p>
+            <div class="contact-method">
+              <label for="scott-contact">Contact Method:</label>
+              <select id="scott-contact" onchange="toggleContactMethod('scott-details')">
+                <option value="email">Email</option>
+                <option value="phone">Phone</option>
+                <option value="post">Post</option>
+              </select>
+            </div>
+            <div class="email-details" style="display: none;">
+              <p>Email: Wei@Hagwards.com</p>
+            </div>
+            <div class="phone-details" style="display: none;">
+              <p>Phone: [Add phone details here]</p>
+            </div>
+            <div class="post-details" style="display: none;">
+              <p>Post: [Add post details here]</p>
+            </div>
+        
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <div class="cta-section">
+      <h3>Join Hogwarts University Today!</h3>
+      <p>Explore the world of magic and knowledge. Apply now for admissions and become part of the Hogwarts legacy.</p>
+      <p>Application Deadline: December 31, 2023</p>
+      <p>Application Timing: 9:00 AM - 5:00 PM (UTC)</p>
+      <a href="admission.html" class="button">Apply Now</a>
+      <p id="countdown"></p>
+  </div>
+
+  <footer class="footer"> 
+    <div class="footer-social"> <!--Social Icon in the left sadie of the screen-->
+        <div class="social-links">
+            <a href="https://www.facebook.com/" 
+                title="Facebook of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+            <a href="https://www.instagram.com/" 
+                title="Instagram of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+            <a href="https://www.youtube.com/" 
+                title="Youtube of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+            <a href="https://twitter.com/" 
+                title="Twitter of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img 
+                src="./images/Logo-bg.png" 
+                alt="Logo Hogwarts University" 
+                class="img-footer">
+                <p>HOGWARTS UNIVERSITY</p>
+        </div>
+    
+   <!--<p>Team Hello World © 2023</p> instead of this decided to use other way-->
+   Copyright &copy; 2023 Hogwarts University
+</footer>
+</body>
+</html>

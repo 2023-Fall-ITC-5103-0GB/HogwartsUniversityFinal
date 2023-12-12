@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>   <!--Common Header, Footer, Nav-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/images/favicon.png"type="image/png">
+    <link rel="stylesheet" href="./styles/darius.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./javascripts/main.js"></script>
+   <script src="./javascripts/darius.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title> <!--style guide under style section-->
+</head> 
+
+<body>
+    <header>
+        <nav class="nav-top">
+            <div id="div-logo"><!--Logo on the left of the screen-->
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-logo">
+                    <h3>HOGWARTS UNIVERSITY</h3>
+            </div>
+            <div id="div-form"> <!--Search form on the right of the screen-->
+                <div id="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search" id="searchHome">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header-contact">
+                    <div class="div-email">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                                <span class="text_1">EMAIL</span></i></a>
+                    </div>
+                    <div class="div-signin">
+                        <a href="./sign_in.html" target="_blank">
+                            <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                                <span class="text_2">SIGN IN</span></i></a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Main menu-->
+<nav class="topnav" id="myTopnav"> 
+    <ul>
+        <li><a href="./home.html" class="text_menu">HOME</a></li>
+        <li>
+            <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+            <ul class="submenu">
+                <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+                <li><a href="./admission.html" class="text_menu">ADMISSIONS</a></li>
+            </ul>
+        </li>
+        <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+        <li><a href="./library_and_resources.html" class="text_menu">LIBRARY</a></li>
+        <li>
+            <a href="#" class="text_menu">RESOURCES</a>
+            <ul class="submenu">
+                <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+                <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+            </ul>
+        </li>
+        <li><a href="./webpage.html" class="text_menu">FACULTY</a></li>
+        <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+        <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+        <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+            <i class="fa fa-bars"></i>
+        </a></li>
+    </ul>
+  </nav>
+
+    <main> <!---My Admission page alongside with the form-->
+        <h3>      What are the requirements?</h3>
+        <p>       Potential future students should be at least 17 years old and older. Applicants must have a passion for magic or born talent with the magic. <br>
+                  Being from the magic related family is an asset. Knowledge of English is a must as if the lectures are in English. Ability to be ready to meet magical animals. </p>
+        <h4>      Documents needed for application</h4>
+        <ul> 
+            <li>  Proof of Identification(passport, government id) in English(must be translated)</li>
+            <li>  English test IELTS with the minimum grade 6.0</li>
+            <li>  Parents' or Caregivers' Full name,  address, phone number, social status, education level, magic talents if applicable </li>
+            <li>  Demonstation of the passion for magic by a video recording of 2 minutes</li>
+            <li>  Health Information Card</li>
+            <li>  High School Degree</li>
+        </ul>
+        <!----Application form-->
+        <h5>  Apply now </h5>
+        <form id="registration-form" name="myform" action="register.php" method="post">
+            <fieldset>
+                <legend>Application form</legend>
+                <div class="label-group"><!---Input for the Firstname-->
+                    <label for="First_Name">Firstname:</label>
+                    <input type="text" name="fname" id="fname" class="input-group" maxlength="10" size="15" />
+                    <span class="error-message">*</span>
+                </div> <!---Input for the Lastname-->
+                <div class="label-group">
+                    <label for="Last_Name">Lastname:</label>
+                    <input type="text" name="lname" id="lname" class="input-group" maxlength="10" size="15" />
+                    <span class="error-message">*</span>
+                </div>
+                <div class="label-group"><!---Choose for the Gender-->
+                    <label for="Gender">Gender:</label>
+                    <input type="radio" value="m" name="gender" id="genderm" class="radio-group" /> Male
+                    <input type="radio" value="f" name="gender" id="genderf" class="radio-group" checked="checked" /> Female
+                    <input type="radio" value="nb" name="gender" id="gendernb" class="radio-group" /> Non-binary
+                    <input type="radio" value="o" name="gender" id="gendero" class="radio-group" /> Other
+                    <input type="text" name="otherGender" id="otherGenderSpecify" class="input-group" placeholder="Specify your gender" style="display: none;" onfocus="document.getElementById('gendero').checked=true" />
+                </div>
+        
+                <div class="label-group"><!---Input for the Email-->
+                    <label for="email_address">E-Mail:</label>
+                    <input type="text" name="email_address" id="email_address" class="input-group" />
+                    <span class="error-message">*</span>
+                </div>
+                <div class="label-group"><!---Input for the phone number-->
+                    <label for="phone">Mobile Phone:</label>
+                    <input type="text" name="phone" id="phone" class="input-group" />
+                    <span class="error-message">*</span>
+                </div>
+                <div class="label-group"><!---Input for the Country-->
+                    <label for="country">Country:</label>
+                    <input type="text" name="country" id="country" class="input-group" />
+                    <span class="error-message">*</span>
+                </div>
+                <div class="label-group">
+                    <label>&nbsp;</label><!---Submit or reset-->
+                    <input type="button" id="submit" class="button-primary" value="Submit" />
+                    <input type="button" id="reset_form" class="button-primary" value="Reset" />
+                </div>
+            </fieldset>
+        </form>
+        <p class="info-text">
+            Disclaimer* After submission of the form, our admission team will email the students with the further actions such as sending the required documents
+        </p>
+         <!-- Chat Button -->
+  <div id="chat-button" class="chat-button" onclick="toggleChat()">Chat Now</div>
+
+  <!-- Pop-up Chat Container -->
+  <div id="chat-popup" class="chat-popup">
+      <div class="chat-header">
+          <span class="chat-close" onclick="toggleChat()">&times;</span>
+          <h3>Chat with Us</h3>
+      </div>
+      <div id="chat-content" class="chat-content">
+          <!-- Chat messages and input field will be dynamically added here -->
+      </div>
+      <input type="text" id="message-input" placeholder="Type your message...">
+      <button onclick="sendMessage()">Send</button>
+  </div>
+        
+    </main>
+    <footer class="footer"> 
+        <div class="footer-social"> <!--Social Icon in the left sadie of the screen-->
+            <div class="social-links">
+                <a href="https://www.facebook.com/" 
+                    title="Facebook of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.instagram.com/" 
+                    title="Instagram of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.youtube.com/" 
+                    title="Youtube of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://twitter.com/" 
+                    title="Twitter of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-footer">
+                    <p>HOGWARTS UNIVERSITY</p>
+            </div>
+        
+       <!--<p>Team Hello World © 2023</p> instead of this decided to use other way-->
+       Copyright &copy; 2023 Hogwarts University
+    </footer>
+   
+</body>
+
+</html>

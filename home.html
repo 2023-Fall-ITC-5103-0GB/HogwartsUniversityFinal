@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Common Header, Footer, Nav-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/vyly.css">
+    <script src="./javascripts/home.js"></script>
+    <script src="./javascripts/main.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title> 
+</head>
+
+<body>
+    <header>
+        <nav class="nav-top">
+            <div id="div-logo"><!--Logo on the left of the screen-->
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-logo">
+                    <h3>HOGWARTS UNIVERSITY</h3>
+            </div>
+            <div id="div-form"> <!--Search form on the right of the screen-->
+                <div id="search-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Search.." name="search" id="searchHome">
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                  </div>
+                  <div class="header-contact">
+                    <div class="div-email">
+                        <a href="#" target="_blank">
+                            <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                                <span class="text_1">EMAIL</span></i></a>
+                    </div>
+                    <div class="div-signin">
+                        <a href="./sign_in.html" target="_blank">
+                            <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                                <span class="text_2">SIGN IN</span></i></a>
+                    </div>
+                  </div>
+            </div>
+        </nav>
+    </header>
+
+<!--Main menu-->
+ <nav class="topnav" id="myTopnav"> 
+  <ul>
+      <li><a href="./home.html" class="text_menu">HOME</a></li>
+      <li>
+          <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+          <ul class="submenu">
+              <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+              <li><a href="./admission.html" class="text_menu">ADMISSIONS</a></li>
+          </ul>
+      </li>
+      <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+      <li><a href="./library_and_resources.html" class="text_menu">LIBRARY</a></li>
+      <li>
+          <a href="#" class="text_menu">RESOURCES</a>
+          <ul class="submenu">
+              <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+              <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+          </ul>
+      </li>
+      <li><a href="./webpage.html" class="text_menu">FACULTY</a></li>
+      <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+      <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+          <i class="fa fa-bars"></i>
+      </a></li>
+  </ul>
+</nav>
+
+    <main> <!--You can start coding your webpages right here-->
+        <!-- Slideshow container - Content 1 -->
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides">
+                <img src="./images/banner1.jpeg" alt="Banner 1" style="width:100%;height: 350px;">
+            </div>
+            <div class="mySlides">
+                <img src="./images/banner2.jpg" alt="Banner 2" style="width:100%;height: 350px;">
+            </div>
+            <div class="mySlides">
+                <img src="./images/banner3.jpg" alt="Banner 3" style="width:100%;height: 350px;">
+            </div>
+            <div class="mySlides">
+                <img src="./images/banner4.jpeg" alt="Banner 4" style="width:100%;height: 350px;">
+            </div>
+        
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+
+        <!--Content 2-->
+        <div class="information1">
+            <div class="infor-left">
+                <h1>Hogwarts University Celebrates</h1>
+                <p>Hogwarts University (also known as Hogwarts University or simply Hogwarts) has become one of the most popular schools on the planet since the mid-1990s. 
+                    It has also been one of the most admired and respected wizarding institutions in the world of magic since the 10th century.</p>
+                <button onclick="functionViewMore()">View More</button>
+            </div>
+            <figure>
+                <img src="./images/main_website_image.jpg" alt="Main Website Image" style="width:100%;height: 100%;">
+            </figure>
+        </div>
+
+        <!--Content 3-->
+        <div class="information2">
+            <div class="inform-top-left">
+                <a href="#"><h3><i class="fa fa-user-circle-o" style="font-size:26px;"></i>
+                    Connect with a Hogwarts Student Ambassador
+                </h3>
+                </a>
+            </div>
+            <div class="inform-between">
+                <h1>The Sorting Ceremony</h1>
+                <p>The first-year Hogwarts School of Witchcraft and Wizardry students are assigned their houses at the annual Sorting Ceremony.</p>
+                <iframe style="width: 60%; height:350px" src="https://www.youtube.com/embed/z4K2F_OALPQ"></iframe>
+            </div>
+            <div class="inform-item1">
+                <h2>Hogwarts Highlights</h2>
+            </div>
+            <div class="inform-item2">
+                <h2>Top Hogwarts News Stories</h2>
+            </div>
+            <section id="blog1">
+                <h5>The Barrett Family Foundation Donates $30 Million to Hogwarts</h5>
+                <p>This gift will support technology innovation and access to post-secondary education in STEM-related fields.</p>
+                <button onclick="functionViewMore()" class="buttonDetail">Full Article on Humber Today</button>
+            </section>
+            <section id="blog2">
+                <h3>Longo Family Foundation Donates $5 Million to Humber</h3>
+                <p>Longo Faculty of Business and Longo Centre for Entrepreneurship named in recognition of gift.</p>
+                <button onclick="functionViewMore()" class="buttonDetail">Full Article on Humber Today</button>
+            </section>
+            <section id="news1">
+                <img src="./images/new1.png" alt="News 1" style="width:120px;height: 120px;padding-right: 5px;">
+                <div class="new-item">
+                    <p>October 31, 2023</p>
+                    <h4>A New Dawn for The Daily Prophet Readers</h4>
+                </div>
+            </section>
+            <section id="news2">
+                <img src="./images/new2.png" alt="News 1" style="width:120px;height: 120px;padding-right: 5px;">
+                <div class="new-item">
+                    <p>November 1, 2023</p>
+                    <h4>Love Potion Predicaments</h4>
+                </div>
+            </section>
+            
+            <section id="news3">
+                <img src="./images/new3.png" alt="News 1" style="width:120px;height: 120px;padding-right: 5px;">
+                <div class="new-item">
+                    <p>November 3, 2023</p>
+                    <h4>Society for the Promotion of Elvish Welfare</h4>
+                </div>
+            </section>
+            <section id="news4">
+                <img src="./images/new4.png" alt="News 1" style="width:120px;height: 120px;padding-right: 5px;">
+                <div class="new-item">
+                    <p>November 5, 2023</p>
+                    <h4>Wizard Magician Breaks Statute of Secrecy</h4>
+                </div>
+            </section>
+        </div>
+        
+    </main>
+
+    <footer> 
+        <div class="footer-social"> <!--Social Icon in the left sadie of the screen-->
+            <div class="social-links">
+                <a href="https://www.facebook.com/" 
+                    title="Facebook of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.instagram.com/" 
+                    title="Instagram of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.youtube.com/" 
+                    title="Youtube of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://twitter.com/" 
+                    title="Twitter of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-footer">
+                    <p>HOGWARTS UNIVERSITY</p>
+            </div>
+        
+            Copyright &copy; 2023 Hogwarts University
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/kavya.css">
+    <script src="./javascripts/vyly.js"></script>
+    <script src="./javascripts/k.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title>
+</head>
+
+<body>
+  <form onsubmit="return validateForm()">
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName">
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName">
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+
+    <input type="submit" value="Submit">
+</form>
+    <header>
+      <nav class="nav-top">
+          <div id="div-logo"><!--Logo on the left of the screen-->
+              <img 
+                  src="./images/Logo-bg.png" 
+                  alt="Logo Hogwarts University" 
+                  class="img-logo">
+                  <h3>HOGWARTS UNIVERSITY</h3>
+          </div>
+          <div id="div-form"> <!--Search form on the right of the screen-->
+              <div id="search-container">
+                  <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search" id="searchHome">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <div class="header-contact">
+                  <div class="div-email">
+                      <a href="#" target="_blank">
+                          <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                              <span class="text_1">EMAIL</span></i></a>
+                  </div>
+                  <div class="div-signin">
+                      <a href="./sign_in.html" target="_blank">
+                          <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                              <span class="text_2">SIGN IN</span></i></a>
+                  </div>
+                </div>
+          </div>
+      </nav>
+  </header>
+
+ <!--Main menu-->
+ <nav class="topnav" id="myTopnav"> 
+  <ul>
+      <li><a href="./home.html" class="text_menu">HOME</a></li>
+      <li>
+          <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+          <ul class="submenu">
+              <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+              <li><a href="#" class="text_menu">ADMISSIONS</a></li>
+          </ul>
+      </li>
+      <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+      <li><a href="#" class="text_menu">SCHOLARSHIP</a></li>
+      <li>
+          <a href="#" class="text_menu">RESOURCES</a>
+          <ul class="submenu">
+              <li><a href="#" class="text_menu">LIBRARY</a></li>
+              <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+              <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+          </ul>
+      </li>
+      <li><a href="#" class="text_menu">FACULTY</a></li>
+      <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+      <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+          <i class="fa fa-bars"></i>
+      </a></li>
+  </ul>
+</nav>
+
+  <main>
+  <h2 style="text-align:center">Facilities and Services</h2>
+  <div class="row">
+<div class="column">
+        <div class="cards">
+    
+        <img src="images/Facilities.jpg" alt="Facilities" class="img-column">
+      <div class="container">
+        <h2>Facilities</h2>
+        <p>What we provide </p>
+        <p>The university's library is a state-of-the-art facility with a vast collection of books, journals, and digital resources.</p>
+        <p>There are a lot of extra curricular activities</p>
+        
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="cards">
+        <img src="images/lab.jpg" alt="lab" class="img-column">
+      <div class="container">
+        <h2>Labs</h2>
+        <p>We have well-equipped labs for magic ,arts and manymore</p>
+        <p>We provide each and every student with their own equipment which are given in the classrooms</p> 
+       
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="cards">
+        <img src="images/news.jpeg" alt="news" class="img-column">
+      <div class="container">
+        <h2>News</h2>
+        <p>Our university has its own newspaper for students </p>
+        <p>That allow students to know what is happening in the whole campus</p>
+        <p>And avaliable the international news</p>
+      </div>
+    </div>
+  </div>
+<div class="column">
+    <div class="cards">
+        <img src="images/services.webp" alt="services" class="img-column">
+      <div class="container">
+        <h2>services</h2>
+        <p>What is the services that provided by our university.</p>
+        <p>There is an emergency alret provided in each room in case of emergency.</p>
+        <p>Provide every necessary services in campus.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="cards">
+        <img src="images/Student Support.jpg" alt="Student Support" class="img-column">
+      <div class="container">
+        <h2>Student Support </h2>
+        <p>Our university have a special Student Support program</p>
+        <p>We also provide a special care about students mental and physical health</p>
+        <p>Every year there a trip for students for learn new things.</p> 
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="cards">
+        <img src="images/Counseling.jpg" alt="Counseling" class="column">
+      <div class="container">
+        <h2>Counseling</h2>
+        <p>Every week we have a special in-person Counseling session </p>
+        <p>Also this Counseling session will be avaliable in the under special </p>
+        <p>This is for everyone for students and faculity.</p>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+  <footer class="footer"> 
+    <div class="footer-social"> <!--Social Icon in the left sadie of the screen-->
+        <div class="social-links">
+            <a href="https://www.facebook.com/" 
+                title="Facebook of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+            <a href="https://www.instagram.com/" 
+                title="Instagram of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+            <a href="https://www.youtube.com/" 
+                title="Youtube of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+            <a href="https://twitter.com/" 
+                title="Twitter of Hogwarts University" 
+                target="_blank"
+                class="a-icon">
+                <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <img 
+                src="./images/Logo-bg.png" 
+                alt="Logo Hogwarts University" 
+                class="img-footer">
+                <p>HOGWARTS UNIVERSITY</p>
+        </div>
+    
+        Copyright &copy; 2023 Hogwarts University
+</footer>
+</body>
+
+</html>

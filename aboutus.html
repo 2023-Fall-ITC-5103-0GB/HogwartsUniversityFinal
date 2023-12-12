@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/kavya.css">
+    <script src="./js/kavya.js"></script>
+    <script src="./javascripts/vyly.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hogwarts University</title><!--style  guide under style section-->
+</head>
+
+<body>
+  <header>
+    <nav class="nav-top">
+        <div id="div-logo"><!--Logo on the left of the screen-->
+            <img 
+                src="./images/Logo-bg.png" 
+                alt="Logo Hogwarts University" 
+                class="img-logo">
+                <h3>HOGWARTS UNIVERSITY</h3>
+                
+        </div>
+        <div id="div-form"> <!--Search form on the right of the screen-->
+            <div id="search-container">
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search" id="searchHome">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+                </form>
+              </div>
+              <div class="header-contact">
+                <div class="div-email">
+                    <a href="#" target="_blank">
+                        <i class="fa fa-envelope" id="icon_resize" style="font-size:20px;color: #fff;">
+                            <span class="text_1">EMAIL</span></i></a>
+                </div>
+                <div class="div-signin">
+                    <a href="./sign_in.html" target="_blank">
+                        <i class="fa fa-sign-in" style="font-size:20px;color: #063970;">
+                            <span class="text_2">SIGN IN</span></i></a>
+                            
+                </div>
+              </div>
+        </div>
+    </nav>
+</header>
+<main>
+  <h1 style="text-align:center">ABOUT US</h1>
+</main>
+ <!--Main menu-->
+ <nav class="topnav" id="myTopnav"> 
+  <ul>
+      <li><a href="./home.html" class="text_menu">HOME</a></li>
+      <li>
+          <a href="./aboutus.html" class="text_menu">ABOUT US</a>
+          <ul class="submenu">
+              <li><a href="./contact.html" class="text_menu">CONTACT INFORMATION</a></li>
+              <li><a href="#" class="text_menu">ADMISSIONS</a></li>
+          </ul>
+      </li>
+      <li><a href="./program.html" class="text_menu">ACADEMIC</a></li>
+      <li><a href="#" class="text_menu">SCHOLARSHIP</a></li>
+      <li>
+          <a href="#" class="text_menu">RESOURCES</a>
+          <ul class="submenu">
+              <li><a href="#" class="text_menu">LIBRARY</a></li>
+              <li><a href="./health.html" class="text_menu">HEALTH CARE</a></li>
+              <li><a href="./facilities.html" class="text_menu">FACILITIES</a></li>
+          </ul>
+      </li>
+      <li><a href="#" class="text_menu">FACULTY</a></li>
+      <li><a href="./job_&_career_opportunities.html" class="text_menu">CAREERS</a></li>
+      <li><a href="./financial_support.html" class="text_menu">FINANCIAL</a></li>
+      <li><a href="javascript:void(0);" class="icon" onclick="myMenuFunction()">
+          <i class="fa fa-bars"></i>
+      </a></li>
+  </ul>
+</nav>
+
+<main>
+      <h1 style="text-align:center">LIFE IN HOGWARTS</h1>
+      <div class="row">
+        <div class="column">
+            <div class="card">
+                <img src="./images/Hogwarts.jpg" alt="Hogwards">
+                <div class="container">
+                    <h1>Hogwards University</h1>
+                    <p>Hogwards University is for the students who want to study magic and there is no age restriction</p>
+                    <p>The University is located in Scotland, it was founded in the 9th century</p>
+                    <p>Known for the Best Magic University in the world</p>
+                </div>
+           </div>
+         </div>
+       
+        <div class="column">
+          <div class="card">
+            <img src="images/Classroom.jpg" alt="Classroom"> 
+            <div class="container">
+              <h1>Hogwards Classrooms</h1>
+              <p>Each Classroos have capacity of 100 students</p>
+              <p>Each student have to enter the classroom whith the provided id card.</p>
+              <P>The cameras are located in ever classroom.</P>
+            </div>
+          </div>
+        </div>
+    
+    <div class="column">
+      <div class="card">
+        <img src="images/Library.jpeg" alt="Library">
+        <div class="container">
+          <h1> Hogwards Library</h1>
+          <p>The Hogwards Library is the collection of magic books from the 10th century.</p>
+          <p>Each student is provided with books according to their house.</p>
+          <p>The Libraryis open until 6pm.</p>
+        </div>
+      </div>
+    </div>
+   
+        <div class="column">
+          <div class="card">
+            <img src="images/residence.jpg" alt="residence">
+            <div class="container">
+              <h1> Hogwards Residence</h1>
+              <p>Residence is located beside the University</p>
+              <p>Avaliable for every student in Hogwards University.</p>
+              <p>They provide 3 meals a day and snacks everyday at 4pm.</p>
+            </div>
+         </div>
+     </div>
+  
+     <div class="column">
+      <div class="card">
+        <img src="images/Awards.jpg" alt="Awards">
+        <div class="container">
+          <h1> Hogwards Awards</h1>
+          <p>Hogwards have recieved 379 award till date.</p>
+          <p>Hogwards recieved the award as the Best University on 1898</p>
+          <p>More than 125 students recieved the Talented Awards till date.</p>
+        </div>
+     </div>
+   </div>
+
+   <div class="column">
+    <div class="card">
+      <img src="images/Scholarship.jpg" alt="Scholarship">
+      <div class="container">
+        <h1> Hogwards Scholarship</h1>
+        <p>Scholarship is provided by the student performance in the enterance exam.</p>
+        <p>Scholarship is upto 10000 dollars.</p>
+      </div>
+   </div>
+  </div>
+</div>
+<h1 style="text-align:left">HOGWARTS SUBJECTS</h1>
+
+<div class="box-container">
+    <!-- Core Classes Box -->
+    <section class="core-box">
+        <h2>Core Classes</h2>
+        <ul>
+            <li class="class-box">
+                <h3>Astronomy</h3>
+                <p>Study the stars, planets, and celestial phenomena in this magical discipline. Students learn about the movements of celestial bodies and their impact on magic.</p>
+            </li>
+            <li class="class-box">
+                <h3>Charms</h3>
+                <p>Master the art of casting spells with precision and finesse. Charms encompass a wide range of magical abilities, from summoning objects to charming creatures.</p>
+            </li>
+            <li class="class-box">
+                <h3>Defence Against the Dark Arts</h3>
+                <p>Equip students with practical skills to defend against dark magic and creatures, emphasizing both offensive and defensive techniques.</p>
+            </li>
+            <li class="class-box">
+                <h3>Herbology</h3>
+                <p>Study magical plants and fungi, learning their properties and uses in potion-making and magical creatures care.</p>
+            </li>
+            <li class="class-box">
+                <h3>History of Magic</h3>
+                <p>Explore the magical history of the wizarding world, including significant events, famous wizards, and the evolution of magical practices.</p>
+            </li>
+            <li class="class-box">
+                <h3>Potions</h3>
+                <p>Master the art of brewing magical concoctions and elixirs, understanding the properties and interactions of various magical ingredients.</p>
+            </li>
+            <li class="class-box">
+                <h3>Transfiguration</h3>
+                <p>Learn the art of changing the form or appearance of an object, mastering the complex and versatile magical skill of transfiguration.</p>
+            </li>
+        </ul>
+    </section>
+
+    <!-- Elective Classes Box -->
+    <section class="elective-box">
+        <h2>Elective Classes</h2>
+        <ul>
+            <li class="class-box">
+                <h3>Alchemy</h3>
+                <p>Explore the magical properties of substances and the transformation of matter. Alchemy is a blend of science and magic, aiming to create powerful potions and elixirs.</p>
+            </li>
+            <li class="class-box">
+                <h3>Arithmancy</h3>
+                <p>Delve into the magical properties of numbers. Arithmancy involves the study of magical equations and the use of numbers to predict future events.</p>
+            </li>
+            <li class="class-box">
+                <h3>Care of Magical Creatures</h3>
+                <p>Learn the care and handling of magical creatures, from Hippogriffs to Blast-Ended Skrewts, emphasizing both practical knowledge and magical sensitivity.</p>
+            </li>
+            <li class="class-box">
+                <h3>Divination</h3>
+                <p>Explore the mystical art of predicting the future and interpreting signs and omens through various magical methods and tools.</p>
+            </li>
+            <li class="class-box">
+                <h3>Muggle Studies</h3>
+                <p>Study the lifestyle, culture, and technology of non-magical people (Muggles), fostering an understanding and appreciation of the Muggle world.</p>
+            </li>
+        </ul>
+    </section>
+</div>
+
+<section>
+  <h1>Explore</h1>
+  <div class="image-container">
+      <div class="circle-image">
+          <img src="images/program 1.webp" alt="program">
+      </div>
+      <li class="dropdown">
+        <a href="#">Registration</a>
+        <div class="dropdown-content">
+            <a href="#">Program requirements</a>
+            <a href="#">Apply for Scholarship</a>
+            <a href="#">Make Payment</a>
+            
+        </div>
+    </li>
+    <div class="image-container">
+      <div class="circle-image">
+          <img src="images/program 2.webp" alt="program">
+      </div>
+    <li class="dropdown">
+      <a href="#">Resources</a>
+      <div class="dropdown-content">
+          <a href="#">Student Support</a>
+          <a href="#">Mail id, Maps, Full Sem schedule </a>
+          <a href="#">International exchange program</a>
+      </div>
+  </li>
+  
+
+    
+     
+</main>
+    <footer class="footer"> 
+        <div class="footer-social"> 
+            <div class="social-links">
+                <a href="https://www.facebook.com/" 
+                    title="Facebook of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-facebook-official" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.instagram.com/" 
+                    title="Instagram of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-instagram" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://www.youtube.com/" 
+                    title="Youtube of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-youtube-play" style="font-size:28px;color: #fff;"></i></a>
+                <a href="https://twitter.com/" 
+                    title="Twitter of Hogwarts University" 
+                    target="_blank"
+                    class="a-icon">
+                    <i class="fa fa-twitter" style="font-size:28px;color: #fff;"></i></a>
+                </div>
+            </div>
+            <div class="footer-logo">
+                <img 
+                    src="./images/Logo-bg.png" 
+                    alt="Logo Hogwarts University" 
+                    class="img-footer">
+                    <p>HOGWARTS UNIVERSITY</p>
+            </div>
+        
+        <p>Copyright &copy;  2023 Hogwarts University</p>
+    </footer>
+</body>
+
+</html>
